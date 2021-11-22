@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Login Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css"/>
+        <link rel="stylesheet" href="pop-up-box.css" type="text/css"/>
+        <link rel="stylesheet" href="MyCSS.css" type="text/css"/>
+        <script type="text/javascript">            
+            function toggle_visibility(id) {
+               var e = document.getElementById(id);
+               if(e.style.display === 'block')
+                  e.style.display = 'none';
+               else
+                  e.style.display = 'block';
+            }
+        </script>
+    </head>
+    <body class="my-Login-Body">
+        <div id="popupBoxOnePosition">
+            <div class="popupBoxWrapper">
+                    <div class="popupBoxContent"> 
+                        <p><a style="margin-left:92%;" href="javascript:void(0)" onclick="toggle_visibility('popupBoxOnePosition');"><span class="closeX glyphicon glyphicon-remove"></span></a></p>
+                        <iframe style="border: 0px #fff solid; border-radius: 5%;" src="register.html" height="330" width="500" allowTransparency="true" scrolling="no" frameborder="0"></iframe>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-2 col-sm-2 col-xs-0"></div>
+                <div class="col-lg-6 col-md-7 col-sm-8 col-xs-12">
+                    <div class="box-login">
+                        <div class="col-lg-2 col-md-1 col-sm-0 col-xs-0"></div>
+                        <form name="login" method="post" action="main.jsp">
+                            <table>
+                                <tr>
+                                    <td>  
+                                        Username: <p>
+                                    </td>
+                                    <td>  
+                                        <input class="box-input" type="text" name="user" size="15" maxlength="20" required/><p>                        
+                                    </td> 
+                                </tr>
+                                <tr>
+                                    <td>
+                                        Password:<p>
+                                    </td> 
+                                    <td>
+                                        <input class="box-input" type="password" name="pass" size="15" maxlength="20" required/><p>
+                                    </td> 
+                                </tr>                                
+                                <tr>
+                                    <td></td>
+                                    <td style="padding-top:20px; padding-bottom:30px;">
+                                        <input class="btn btn-primary btn-lg" type="submit" value="Είσοδος">
+                                    </td>
+                                </tr>
+                            </table>
+                        </form>
+                        <div class="col-lg-2 col-md-1 col-sm-0 col-xs-0"></div>
+                        <form name="register" method="post" action="javascript:void(0)">
+                            <table>
+                                <tr>
+                                    <td>
+                                        Αν δεν έχετε εγγραφτεί...→
+                                    </td>
+                                    <td>
+                                        <input class="btn btn-register btn-lg" type="submit" value="Εγγραφή" onclick="toggle_visibility('popupBoxOnePosition');">
+                                    </td>
+                                </tr>
+                            </table>                
+                        </form>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

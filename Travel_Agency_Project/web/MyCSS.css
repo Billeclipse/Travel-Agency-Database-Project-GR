@@ -1,0 +1,87 @@
+
+.my-Register-Body{
+    font-size: 20px;
+    background-color: #fff;
+    margin: 0px 0px 0px 80px;
+}
+
+.my-Login-Body{
+    font-size: 25px;
+    color: #111;
+    margin: 10% 0px 0px 0px;
+    padding: 0;
+    background-image: url("Images/bg_main.jpg");
+	background-attachment:fixed;
+	background-size:cover;
+}
+
+.my-Main-Body{
+    font-size: 25px;
+    color: #111;
+    margin: 10% 0px 0px 0px;
+    padding: 0;
+    background-image: url("Images/bg_main.jpg");
+	background-attachment:fixed;
+	background-size:cover;
+}
+
+.box-login{
+    font-size: 20px;
+    background-color: #fff;
+    padding: 50px 10px 50px 20px;
+    border: 1px #fff solid;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.box-main{
+    margin-left:0px;
+    font-size: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px #fff solid;
+    border-radius: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.box-input{
+    border: 1px #aaa solid;
+    border-radius: 4px;
+}
+
+td{
+    padding: 5px 15px 5px 0px;
+    margin: 0;
+}
+
+.my-button-register{
+    padding: 50px 0px 30px 0px;
+}
+
+.btn-register {
+  color: #fff;
+  background-color: #88939E;
+  border-color: #fff;
+}
+
+.btn-register:hover,
+.btn-register:focus,
+.btn-register:active,
+.btn-register.active {
+  color: #fff;
+  background-color: #586A7D;
+  border-color: #88939E;
+}
+
+span.closeX{
+    color: #d9534f !important;
+}
+
+span.closeX:hover,
+span.closeX:focus,
+span.closeX:active,
+span.closeX:active{
+  color: #c12e2a !important;
+}

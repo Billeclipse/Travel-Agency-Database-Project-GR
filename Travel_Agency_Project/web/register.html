@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Register</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" type="text/css"/>
+        <link rel="stylesheet" href="MyCSS.css" type="text/css"/>      
+    </head>
+    <body class="my-Register-Body">
+        <div class="container-fluid">
+            <div class="row">                
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">                      
+                    <form name="login" method="post" action="register.jsp">
+                        <table>
+                            <tr>
+                                <td>                            
+                                    Username:<p>
+                                </td>
+                                <td>
+                                    <input class="box-input" type="text" placeholder="username" name="user" maxlength="20" required/><p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Email:<p>
+                                </td>
+                                <td>
+                                    <input class="box-input" type="email" placeholder="example@example.com" name="email" maxlength="30" required/><p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Password:<p>
+                                </td>
+                                <td>
+                                    <input class="box-input" type="password" name="pass" maxlength="20" required/><p>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Re-Enter Password:<p>
+                                </td>
+                                <td>
+                                    <input class="box-input" type="password" name="rePass" maxlength="20" required/><p>
+                                </td>
+                            </tr>
+                            <tr><td colspan="2" style="padding-top:20px; text-align: center; width: 100%;"><input class="btn btn-primary btn-lg" type="submit" value="Υποβολή"></td></tr>
+                        </table>    
+                    </form>                        
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
